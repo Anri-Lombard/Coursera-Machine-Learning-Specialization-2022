@@ -36,6 +36,12 @@ The Specialization is divided into 3 courses:
       * As an example, you could use anomaly detection to find unusual credit card transactions.
     * __Reinforcement Learning__ is when you want to train an agent to perform a task in an environment.
       * As an example, you could use reinforcement learning to train a robot to walk.
+
+#### Regression Model
+* Linear regression model with one variable is just fitting a straight line to the data.
+  * Could help predict the price of a house based on its size.
+* The model (f) outputs a prediction (y-hat) given some inputs (x) after it is trained.
+  * The model, f, is a mathematical formula eg. $f_{w,b}(x) = w x + b$.
   
 ### Week 2
 
