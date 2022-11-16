@@ -41,7 +41,7 @@ The Specialization is divided into 3 courses:
 * Linear regression model with one variable is just fitting a straight line to the data.
   * Could help predict the price of a house based on its size.
 * The model (f) outputs a prediction (y-hat) given some inputs (x) after it is trained.
-  * The model, f, is a mathematical formula eg. $f_{w,b}(x) = w x + b$.
+  * The model, f, is a mathematical formula eg. $f_{w,b}(x) = w x + b$, which is a linear model.
   
 ### Week 2
 
