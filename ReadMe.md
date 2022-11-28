@@ -1,5 +1,8 @@
 # Machine Learning Specialization 2022
 
+## Disclaimer
+This is my personal notes on the course, meaning these are my interpretations of the course material and lectures, my solutions the course assignments - which might be suboptimal in certain cases. Any mistakes in either the notes or the solutions are mine and not the course creator's. Feel free to use these notes and solutions to bolster your understanding and good luck with the course!
+
 ## Specialization Outline
 The Specialization is divided into 3 courses:
 * Part 1: Supervised Machine Learning: Regression and Classification
@@ -42,20 +45,15 @@ The Specialization is divided into 3 courses:
   * Could help predict the price of a house based on its size.
 * The model (f) outputs a prediction (y-hat) given some inputs (x) after it is trained.
   * The model, f, is a mathematical formula eg. $f_{w,b}(x) = w x + b$ or just $f(x) = w x + b$, which is a linear model.
-  
-### Week 2
+  * w and b referred to as the parameters or weights of the model.
+* The __Cost Function__ is a function that is used to measure the performance of the model.
+  * Calculated with $\frac{1}{2m} \sum_{i=1}^{m} (f(x^{(i)}) - y^{(i)})^2$ where $f(x^{(i)})$ is the prediction of the model for the i-th training example, and $y^{(i)}$ is the actual value of the i-th training example.
+  * Also written as $J(w,b) = \frac{1}{2m} \sum_{i=1}^{m} (f_{w,b}(x^{(i)}) - y^{(i)})^2$ and we want to minimize $J(w,b)$.
 
-### Week 3
+#### Train Model with Gradient Descent
+* __Gradient Descent__ is one of the most important building blocks in Machine Learning. It is an algorithm that is used to minimize cost function.
 
-### Week 4
 
-<hr />
 
-## [Part 2: Advanced Learning Algorithms](2.%20Advanced%20Learning%20Algorithms/)
-
-<hr />
-
-## [Part 3: Unsupervised Learning: Reccomenders, Reinforcement Learning](3.%20Unsupervised%20Learning/)
-
-<hr />
+__In progress...__
 
