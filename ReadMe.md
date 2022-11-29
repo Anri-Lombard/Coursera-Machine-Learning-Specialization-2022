@@ -67,7 +67,23 @@ The Specialization is divided into 3 courses:
 ### <u>Week 2: Regression with Multiple Input Variables</u>
 
 #### Multiple Linear Regression
+* __Vectorization__ is when you perform operations on vectors and matrices instead of individual numbers.
+  * This is much faster than performing operations on individual numbers.
+  * Also uses specialized hardware to perform operations on vectors and matrices.
+* An alternative Gradient Descent is the __Normal Equation__.
+  * The normal equation is as follows: $\theta = (X^T X)^{-1} X^T y$ where $\theta$ is the vector of parameters, $X$ is the matrix of features, and $y$ is the vector of outputs.
+  * The normal equation is much faster than gradient descent, but it is not scalable to large datasets.
+  * The normal equation is also not suitable for large datasets because it requires the inverse of $X^T X$, which is computationally expensive.
 
+#### Gradient Descent in practice
+* __Feature Scaling__ is when you scale the features so that they are in the same range.
+  * This makes gradient descent converge faster.
+* To vertify that gradient descent is working, plot the graph of the cost function against the number of iterations.
+  * If the cost function is decreasing, then gradient descent is working.
+    * If it is decreasing too slowly, then you might need to increase the __learning rate__.
+  * If the cost function is not decreasing, then gradient descent is not working, or the learning rate is too big.
+    * Try decreasing the __learning rate__.
+* Choosing the most appropriate features is known as __feature engineering__.
 
 
 __In progress...__
