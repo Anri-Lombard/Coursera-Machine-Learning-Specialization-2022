@@ -1,7 +1,7 @@
 # Machine Learning Specialization 2022
 
 ## Disclaimer
-This is my personal notes on the course, meaning these are my interpretations of the course material and lectures, my solutions the course assignments - which might be suboptimal in certain cases. Any mistakes in either the notes or the solutions are mine and not the course creator's. Feel free to use these notes and solutions to bolster your understanding and good luck with the course!
+This is my personal notes on the course, meaning these are my interpretations of the course material and lectures, my solutions the course assignments - which might be suboptimal in certain cases. Any mistakes in either the notes or the solutions are mine and not the course creator's. Feel free to use these notes and solutions to bolster your understanding, but do not use them to surpass the course prematurely, nor to get yourself out of a jam. This will not help you and leave you with a frailed understanding of the material.
 
 ## Specialization Outline
 The Specialization is divided into 3 courses:
@@ -57,3 +57,6 @@ The Specialization is divided into 3 courses:
 
 __In progress...__
 
+
+# References
+* [Machine Learning Specialization](https://www.coursera.org/specializations/machine-learning-introduction)
