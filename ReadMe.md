@@ -1,7 +1,7 @@
 # Machine Learning Specialization 2022
 
 ## Disclaimer
-This is my personal notes on the course, meaning these are my interpretations of the course material and lectures, my solutions the course assignments - which might be suboptimal in certain cases. Any mistakes in either the notes or the solutions are mine and not the course creator's. Feel free to use these notes and solutions to bolster your understanding, but do not use them to surpass the course prematurely, nor to get yourself out of a jam. This will not help you and leave you with a frailed understanding of the material.
+This is my personal notes on the course, meaning these are my interpretations of the course material and lectures, my solutions the course assignments - which might be suboptimal in certain cases. Any mistakes in either the notes or the solutions are mine and not the course creator's. Feel free to use these notes and solutions to bolster your understanding, but __do not use them to surpass the course prematurely, nor to get yourself out of a jam.__ _This will not help you and leave you with a frailed understanding of the material._
 
 ## Specialization Outline
 The Specialization is divided into 3 courses:
@@ -11,7 +11,7 @@ The Specialization is divided into 3 courses:
 
 # Notes
 ## [Part 1: Supervised Machine Learning: Regression and Classification](1.%20Supervised%20Machine%20Learning/)
-### Week 1
+### <u>Week 1: Introduction to Machine Learning</u>
 #### Overview
 * __Machine Learning__ is "the science of getting computers to act without being explicitly programmed" (Arthur Samuel 1959) and is a subfield of _Artificial Intelligence_.
 * There are many applications of machine learning in daily life, even without us noticing it.
@@ -52,6 +52,21 @@ The Specialization is divided into 3 courses:
 
 #### Train Model with Gradient Descent
 * __Gradient Descent__ is one of the most important building blocks in Machine Learning. It is an algorithm that is used to minimize cost function.
+  * The gradient descent algorithm is as follows:
+    1. Initialize the parameters w and b.
+    2. Calculate the cost function $J(w,b)$.
+    3. Calculate the partial derivatives of $J(w,b)$ with respect to w and b.
+    4. Update the parameters w and b with the partial derivatives, simultaneously.
+    5. Repeat steps 2 to 4 until convergence.
+  * __Convergence__ is when $J(w,b)$ stops decreasing.
+  * The intuition behind gradient descent is that we want to find the minimum of the cost function, and we can do this by taking steps in the direction of the negative gradient.
+* The __Learning Rate__ is a hyperparameter that controls how big the steps are in the direction of the negative gradient.
+  * If the learning rate is too small, it will take a long time to converge.
+  * If the learning rate is too big, it might not converge, or it might even diverge.
+
+### <u>Week 2: Regression with Multiple Input Variables</u>
+
+#### Multiple Linear Regression
 
 
 
