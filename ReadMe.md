@@ -85,6 +85,33 @@ The Specialization is divided into 3 courses:
     * Try decreasing the __learning rate__.
 * Choosing the most appropriate features is known as __feature engineering__.
 
+### <u>Week 3: Classification</u>
+
+#### Classification with logistic regression
+* __Binary classification__ is when the output is either 0 or 1.
+  * As an example, you could use binary classification to predict whether a tumor is malignant or benign.
+* __Logistic regression__ is a classification algorithm that is used to predict the probability that an input belongs to a certain class.
+  * The logistic regression model is as follows: $f(x) = \frac{1}{1 + e^{-z}}$ where $z = w^T x + b$.
+  * The logistic regression model outputs a value between 0 and 1, which can be interpreted as the probability that the input belongs to a certain class.
+* A __Decision Boundary__ is the line that separates the 0 and 1 regions.
+  * The decision boundary is a straight line for logistic regression.
+
+#### Cost function for logistic regression
+* The cost function for logistic regression is as follows: $J(w,b) = \frac{1}{m} \sum_{i=1}^{m} \bigg[ -y^{(i)} \log(f_{w,b}(x^{(i)})) - (1 - y^{(i)}) \log(1 - f_{w,b}(x^{(i)})) \bigg]$.
+  * The cost function is convex, so gradient descent will always converge to the global minimum.
+* The loss function of logistic regression is as follows: $L(f_{w,b}(x), y) = -y \log(f_{w,b}(x)) - (1 - y) \log(1 - f_{w,b}(x))$.
+  * The loss function is not convex, so gradient descent might not converge to the global minimum.
+* To do gradient descent for logistic regression, we need to calculate the partial derivatives of $J(w,b)$ with respect to w and b.
+  * The partial derivatives are as follows: $\frac{\partial J(w,b)}{\partial w} = \frac{1}{m} \sum_{i=1}^{m} (f_{w,b}(x^{(i)}) - y^{(i)}) x^{(i)}$ and $\frac{\partial J(w,b)}{\partial b} = \frac{1}{m} \sum_{i=1}^{m} (f_{w,b}(x^{(i)}) - y^{(i)})$.
+  * Then we update the parameters w and b with the partial derivatives, simultaneously.
+
+#### The problem of overfitting
+* __Overfitting__ is when the model fits the training data too well, but does not generalize well to new data.
+  * This is because the model is too complex.
+  * Also known as __high variance__.
+* __Underfitting__ is when the model does not fit the training data well.
+  * This is because the model is too simple.
+  * Also known as __high bias__.
 
 __In progress...__
 
