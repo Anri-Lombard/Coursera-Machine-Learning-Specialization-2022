@@ -109,11 +109,32 @@ The Specialization is divided into 3 courses:
 * __Overfitting__ is when the model fits the training data too well, but does not generalize well to new data.
   * This is because the model is too complex.
   * Also known as __high variance__.
+  * To address overfitting, you can collect more data, use regularization (reduce size of parameters) or use a simpler model.
 * __Underfitting__ is when the model does not fit the training data well.
   * This is because the model is too simple.
   * Also known as __high bias__.
+  * To address underfitting, you can use a more complex model.
+* We want a model that generalizes well to new data, but also fits the training data well.
+* __Regularization__ is a technique that is used to reduce overfitting.
+  * The cost function for logistic regression with regularization is as follows: $J(w,b) = \frac{1}{m} \sum_{i=1}^{m} \bigg[ -y^{(i)} \log(f_{w,b}(x^{(i)})) - (1 - y^{(i)}) \log(1 - f_{w,b}(x^{(i)})) \bigg] + \frac{\lambda}{2m} \sum_{j=1}^{n} w_j^2$.
+    * The regularization term is $\frac{\lambda}{2m} \sum_{j=1}^{n} w_j^2$.
+    * $\lambda$ is the regularization parameter.
+    * $\lambda$ controls how much you want to regularize the model.
+      * If $\lambda$ is too big, then the model will be too simple.
+      * If $\lambda$ is too small, then the model will be too complex.
 
-__In progress...__
+<hr />
+
+## Part 2: Advanced Learning Algorithms
+### Week 1: Neural Networks
+#### Neural Network Intuition
+* __Neural Networks__ are a type of machine learning algorithm that is inspired by the human brain.
+  * In the brain there are neurons that are connected to each other. The input of one neuron is the output or another neuron.
+  * We know very little about the brain, thus we do not mimic the brain exactly. Instead, we use a simplified model of the brain.
+* Neural networks have taken off in the last few years because of the availability of large datasets and the availability of powerful computers, which allows us to train neural networks.
+
+
+__In Progress...__
 
 
 # References
