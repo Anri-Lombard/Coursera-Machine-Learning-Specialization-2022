@@ -134,7 +134,7 @@ The Specialization is divided into 3 courses:
 * Neural networks have taken off in the last few years because of the availability of large datasets and the availability of powerful computers, which allows us to train neural networks.
 
 
-__IN PROGRESS...__
+__In progress...__
 
 
 # References
