@@ -1,7 +1,7 @@
 # Machine Learning Specialization 2022
 
 ## Disclaimer
-This is my personal notes on the course, meaning these are my interpretations of the course material and lectures, my solutions the course assignments - which might be suboptimal in certain cases. Any mistakes in either the notes or the solutions are mine and not the course creator's. Feel free to use these notes and solutions to bolster your understanding, but __do not use them to surpass the course prematurely, nor to get yourself out of a jam.__ _This will not help you and leave you with a frailed understanding of the material._
+This is my personal notes on the course, meaning these are my interpretations of the course material and lectures, - which might be suboptimal in certain cases. Any mistakes in either the notes or the solutions are mine and not the course creator's. Feel free to use these notes and solutions to bolster your understanding, but __do not use them to surpass the course prematurely, nor to get yourself out of a jam.__ _This will not help you and leave you with a frailed understanding of the material._
 
 ## Specialization Outline
 The Specialization is divided into 3 courses:
@@ -10,7 +10,7 @@ The Specialization is divided into 3 courses:
 * Part 3: Unsupervised Learning: Reccomenders, Reinforcement Learning
 
 # Notes
-## [Part 1: Supervised Machine Learning: Regression and Classification](1.%20Supervised%20Machine%20Learning/)
+## Part 1: Supervised Machine Learning: Regression and Classification
 ### <u>Week 1: Introduction to Machine Learning</u>
 #### Overview
 * __Machine Learning__ is "the science of getting computers to act without being explicitly programmed" (Arthur Samuel 1959) and is a subfield of _Artificial Intelligence_.
