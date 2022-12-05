@@ -1,7 +1,7 @@
 # Machine Learning Specialization 2022
 
 ## Disclaimer
-This is my personal notes on the course, meaning these are my interpretations of the course material and lectures, - which might be suboptimal in certain cases. Any mistakes in either the notes or the solutions are mine and not the course creator's. Feel free to use these notes and solutions to bolster your understanding, but __do not use them to surpass the course prematurely, nor to get yourself out of a jam.__ _This will not help you and leave you with a frailed understanding of the material._
+These are my notes on the course, meaning these are my interpretations of the course material and lectures, - which might be suboptimal in certain cases. Any mistakes in either the notes or the solutions are mine and not the course creators. Feel free to use these notes and solutions to bolster your understanding, but __do not use them to surpass the course prematurely, nor to get yourself out of a jam.__ _This will not help you and leave you with a failed understanding of the material._
 
 ## Advice
 I highly recommend using [OpenAI's ChatGPT](https://chat.openai.com/chat) to ask questions and get answers while doing this course, or any coding in general. It is amazing at helping out.
@@ -10,7 +10,7 @@ I highly recommend using [OpenAI's ChatGPT](https://chat.openai.com/chat) to ask
 The Specialization is divided into 3 courses:
 * Part 1: Supervised Machine Learning: Regression and Classification
 * Part 2: Advanced Learning Algorithms
-* Part 3: Unsupervised Learning: Reccomenders, Reinforcement Learning
+* Part 3: Unsupervised Learning: Recommenders, Reinforcement Learning
 
 # Notes
 ## Part 1: Supervised Machine Learning: Regression and Classification
@@ -44,13 +44,13 @@ The Specialization is divided into 3 courses:
       * As an example, you could use reinforcement learning to train a robot to walk.
 
 #### Regression Model
-* Linear regression model with one variable is just fitting a straight line to the data.
+* A linear regression model with one variable is just fitting a straight line to the data.
   * Could help predict the price of a house based on its size.
 * The model (f) outputs a prediction (y-hat) given some inputs (x) after it is trained.
   * The model, f, is a mathematical formula eg. $f_{w,b}(x) = w x + b$ or just $f(x) = w x + b$, which is a linear model.
-  * w and b referred to as the parameters or weights of the model.
+  * w and b are referred to as the parameters or weights of the model.
 * The __Cost Function__ is a function that is used to measure the performance of the model.
-  * Calculated with $\frac{1}{2m} \sum_{i=1}^{m} (f(x^{(i)}) - y^{(i)})^2$ where $f(x^{(i)})$ is the prediction of the model for the i-th training example, and $y^{(i)}$ is the actual value of the i-th training example.
+  * Calculated with $\frac{1}{2m} \sum_{i=1}^{m} (f(x^{(i)}) - y^{(i)})^2$ where $f(x^{(i)})$ is the prediction of the model for the ith training example, and $y^{(i)}$ is the actual value of the ith training example.
   * Also written as $J(w,b) = \frac{1}{2m} \sum_{i=1}^{m} (f_{w,b}(x^{(i)}) - y^{(i)})^2$ and we want to minimize $J(w,b)$.
 
 #### Train Model with Gradient Descent
@@ -81,7 +81,7 @@ The Specialization is divided into 3 courses:
 #### Gradient Descent in practice
 * __Feature Scaling__ is when you scale the features so that they are in the same range.
   * This makes gradient descent converge faster.
-* To vertify that gradient descent is working, plot the graph of the cost function against the number of iterations.
+* To verify that gradient descent is working, plot the graph of the cost function against the number of iterations.
   * If the cost function is decreasing, then gradient descent is working.
     * If it is decreasing too slowly, then you might need to increase the __learning rate__.
   * If the cost function is not decreasing, then gradient descent is not working, or the learning rate is too big.
@@ -96,7 +96,7 @@ The Specialization is divided into 3 courses:
 * __Logistic regression__ is a classification algorithm that is used to predict the probability that an input belongs to a certain class.
   * The logistic regression model is as follows: $f(x) = \frac{1}{1 + e^{-z}}$ where $z = w^T x + b$.
   * The logistic regression model outputs a value between 0 and 1, which can be interpreted as the probability that the input belongs to a certain class.
-* A __Decision Boundary__ is the line that separates the 0 and 1 regions.
+* A __Decision **Boundary** is a line that separates the 0 and 1 regions.
   * The decision boundary is a straight line for logistic regression.
 
 #### Cost function for logistic regression
@@ -104,15 +104,15 @@ The Specialization is divided into 3 courses:
   * The cost function is convex, so gradient descent will always converge to the global minimum.
 * The loss function of logistic regression is as follows: $L(f_{w,b}(x), y) = -y \log(f_{w,b}(x)) - (1 - y) \log(1 - f_{w,b}(x))$.
   * The loss function is not convex, so gradient descent might not converge to the global minimum.
-* To do gradient descent for logistic regression, we need to calculate the partial derivatives of $J(w,b)$ with respect to w and b.
+* To do gradient descent for logistic regression, we need to calculate the partial derivatives of $J(w,b)$ concerning w and b.
   * The partial derivatives are as follows: $\frac{\partial J(w,b)}{\partial w} = \frac{1}{m} \sum_{i=1}^{m} (f_{w,b}(x^{(i)}) - y^{(i)}) x^{(i)}$ and $\frac{\partial J(w,b)}{\partial b} = \frac{1}{m} \sum_{i=1}^{m} (f_{w,b}(x^{(i)}) - y^{(i)})$.
   * Then we update the parameters w and b with the partial derivatives, simultaneously.
 
 #### The problem of overfitting
-* __Overfitting__ is when the model fits the training data too well, but does not generalize well to new data.
+* __Overfitting__ is when the model fits the training data too well but does not generalize well to new data.
   * This is because the model is too complex.
   * Also known as __high variance__.
-  * To address overfitting, you can collect more data, use regularization (reduce size of parameters) or use a simpler model.
+  * To address overfitting, you can collect more data, use regularization (reduce the size of parameters) or use a simpler model.
 * __Underfitting__ is when the model does not fit the training data well.
   * This is because the model is too simple.
   * Also known as __high bias__.
@@ -132,7 +132,7 @@ The Specialization is divided into 3 courses:
 ### <ul>Week 1: Neural Networks</ul>
 #### Neural Network Intuition
 * __Neural Networks__ are a type of machine learning algorithm that is inspired by the human brain.
-  * In the brain there are neurons that are connected to each other. The input of one neuron is the output or another neuron.
+* In the brain, some neurons are connected. The input of one neuron is the output of another neuron.
   * We know very little about the brain, thus we do not mimic the brain exactly. Instead, we use a simplified model of the brain.
 * Neural networks have taken off in the last few years because of the availability of large datasets and the availability of powerful computers, which allows us to train neural networks.
 
@@ -160,7 +160,7 @@ The Specialization is divided into 3 courses:
      2. Compute loss.
      3. Implement backward propagation to get the gradients.
      4. Update parameters (gradient descent).
-* Today there are libraries that can do all of this for you, but it is still good to understand how it works.
+* Today some libraries can do all of this for you, but it is still good to understand how it works.
 
 #### Activation Functions
 * Some alternatives to the sigmoid function are the __tanh__ function and the __ReLU__ function.
@@ -168,7 +168,7 @@ The Specialization is divided into 3 courses:
   * The ReLU function is defined as $ReLU(x) = max(0, x)$.
 * Choosing an activation function is an important part of building a neural network.
   * The sigmoid function is good for binary classification.
-  * The tanh function is good for binary classification and for hidden layers.
+  * The tanh function is good for binary classification and hidden layers.
   * The ReLU function is good for hidden layers.
 * We need activation functions that are not linear, because if they were linear, then the neural network would be equivalent to a linear regression model, which defeats the purpose of using a neural network.
 
@@ -191,6 +191,28 @@ The Specialization is divided into 3 courses:
   * The logits are the inputs to the softmax function.
   * The logits are the outputs of the last layer of a neural network.
 
+#### Optimization
+* __Adam__ is an optimization algorithm that is used to update the parameters of a neural network and stands for __adaptive moment estimation__.
+
+### <ul>Week 3: Advice for Applying Machine Learning</ul>
+
+#### Advice for Applying Machine Learning
+* We have the tools to build a machine-learning model, but how do we know if it will work? There are a few ways we could improve our model:
+  * Get more training data.
+  * Try smaller sets of features.
+  * Try getting additional features.
+  * Try adding polynomial features.
+  * Try decreasing $\lambda$.
+  * Try increasing $\lambda$.
+* Choosing well means saving a lot of time that would otherwise be wasted, but choosing correctly could be tricky.
+* To evaluate the model, we can look at the fraction of misclassifications on the training set and test set.
+  * If the training set error is low, but the test set error is high, then the model is overfitting.
+  * If the training set error is high, then the model is underfitting.
+  * If the training set error is low, and the test set error is low, then the model is working well.
+  * To do this evaluation we split data into a training set, test set, and cross-validation set.
+    * The training set is used to train the model.
+    * The test set is used to evaluate the model.
+    * The cross-validation set is used to choose the model.
 
 __In progress...__
 
