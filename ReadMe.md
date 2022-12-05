@@ -3,6 +3,9 @@
 ## Disclaimer
 This is my personal notes on the course, meaning these are my interpretations of the course material and lectures, - which might be suboptimal in certain cases. Any mistakes in either the notes or the solutions are mine and not the course creator's. Feel free to use these notes and solutions to bolster your understanding, but __do not use them to surpass the course prematurely, nor to get yourself out of a jam.__ _This will not help you and leave you with a frailed understanding of the material._
 
+## Advice
+I highly recommend using [OpenAI's ChatGPT](https://chat.openai.com/chat) to ask questions and get answers while doing this course, or any coding in general. It is amazing at helping out.
+
 ## Specialization Outline
 The Specialization is divided into 3 courses:
 * Part 1: Supervised Machine Learning: Regression and Classification
@@ -126,12 +129,67 @@ The Specialization is divided into 3 courses:
 <hr />
 
 ## Part 2: Advanced Learning Algorithms
-### Week 1: Neural Networks
+### <ul>Week 1: Neural Networks</ul>
 #### Neural Network Intuition
 * __Neural Networks__ are a type of machine learning algorithm that is inspired by the human brain.
   * In the brain there are neurons that are connected to each other. The input of one neuron is the output or another neuron.
   * We know very little about the brain, thus we do not mimic the brain exactly. Instead, we use a simplified model of the brain.
 * Neural networks have taken off in the last few years because of the availability of large datasets and the availability of powerful computers, which allows us to train neural networks.
+
+#### Neural Network Model
+* __Activations__ are the output of a neuron.
+  * To calculate the activation of a neuron, we take the weighted sum of the inputs, add the bias, and then apply the activation function.
+  * The formula Andrew uses is $a^{[l]} = g^{[l]}(w^{[l]} * a^{[l-1]} + b^{[l]})$ where $a^{[l]}$ is the activation of the lth layer, $g^{[l]}$ is the activation function of the lth layer, $w^{[l]}$ is the weight matrix of the lth layer, $a^{[l-1]}$ is the activation of the (l-1)th layer, and $b^{[l]}$ is the bias vector of the lth layer.
+* Calculating the activation of a neuron is done with the __forward propagation__ algorithm.
+  
+#### Artificial General Intelligence
+* __Artificial General Intelligence__ is when a machine can perform any intellectual task that a human can perform.
+  * This is a very ambitious goal.
+  * The goal of __artificial narrow intelligence__ is to create a model that can perform a specific task, but this is not AGI.
+    * For example, a model that can recognize handwritten digits.
+  * Andrew thinks it will take more than a decade to achieve this, and describes possible paths to it.
+
+### <ul>Week 2: Neural Network Training</ul>
+
+#### Neural Net Training
+* Training a neural net follows these 3 steps:
+  1. Define the neural network structure (number of input units, number of hidden units, etc).
+  2. Initialize the model's parameters.
+  3. Loop:
+     1. Implement forward propagation.
+     2. Compute loss.
+     3. Implement backward propagation to get the gradients.
+     4. Update parameters (gradient descent).
+* Today there are libraries that can do all of this for you, but it is still good to understand how it works.
+
+#### Activation Functions
+* Some alternatives to the sigmoid function are the __tanh__ function and the __ReLU__ function.
+  * The tanh function is defined as $tanh(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}}$.
+  * The ReLU function is defined as $ReLU(x) = max(0, x)$.
+* Choosing an activation function is an important part of building a neural network.
+  * The sigmoid function is good for binary classification.
+  * The tanh function is good for binary classification and for hidden layers.
+  * The ReLU function is good for hidden layers.
+* We need activation functions that are not linear, because if they were linear, then the neural network would be equivalent to a linear regression model, which defeats the purpose of using a neural network.
+
+#### Multiclass Classification
+* __Multiclass classification__ is when there are more than 2 classes.
+  * For example, classifying handwritten digits.
+* __Softmax__ is a function that is used to calculate the probability of an input belonging to a certain class.
+  * The softmax function is defined as $softmax(x) = \frac{e^x}{\sum_{i=1}^{n} e^x}$.
+  * The softmax function is used to calculate the probability of an input belonging to a certain class.
+  * The softmax function is used in multiclass classification.
+* __Cross-entropy__ is a function that is used to calculate the loss of a neural network that does multiclass classification.
+  * The cross-entropy function is defined as $H(y, \hat{y}) = -\sum_{i=1}^{n} y_i \log(\hat{y}_i)$.
+  * The cross-entropy function is used in conjunction with the softmax function.
+* __MNIST__ is a large database of handwritten digits that is used to train models to recognize handwritten digits.
+  * The MNIST database contains 60,000 training examples and 10,000 test examples.
+  * Each example is a 28x28 pixel grayscale image of a handwritten digit.
+  * Each pixel is represented by an integer between 0 and 255.
+  * Each image also has a label, which is an integer between 0 and 9, inclusive, representing which digit is in the image.
+* __Logits__ are the raw outputs of a neural network.
+  * The logits are the inputs to the softmax function.
+  * The logits are the outputs of the last layer of a neural network.
 
 
 __In progress...__
