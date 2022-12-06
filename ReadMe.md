@@ -217,6 +217,23 @@ The Specialization is divided into 3 courses:
 #### Bias and Variance
 * High bias means the model is underfitting, which means the model is too simple.
 * High variance means the model is overfitting, which means the model is too complex.
+* To establish a baseline we can look at human-level performance, or look at the performance of current models if there are any.
+
+#### Machine Learning Development Process
+* The iterative loop Andrew suggests:
+  1. Choose an architecture.
+  2. Train the model.
+  3. Evaluate the model.
+  4. Analyze the results.
+  5. Iterate.
+* Error analysis is the process of looking at the misclassifications and trying to understand why the model is making those mistakes. By categorizing misclassifications, we can try to understand what the model is doing wrong and try to fix it, and look at where to focus our efforts.
+* Adding more data is tempting, but it is not always the best solution. A better approach might be to evaluate which _type_ of data is necessary, and then try to get more of that type of data. This could boost performance more than just adding more data.
+  * One way to add more data would be to augment the data we already have. __Data augmentation__ is the process of creating new data from the data we already have.
+    * For example, if we have a dataset of images of cats, we could rotate the images, flip them, and change the brightness of the images to create new images.
+* It might be better to take a data-centric approach to machine learning, compared to a conventional model-centric approach.
+  * __Transfer Learning__ is the process of using a model that has already been trained on a different dataset to train a model on a new dataset.
+    * For example, we could use a model that has already been trained on the ImageNet dataset to train a model on the MNIST dataset.
+  * To apply transfer learning we would take a trained model and replace the last layer with a new layer that is specific to thenew dataset.
 
 __In progress...__
 
