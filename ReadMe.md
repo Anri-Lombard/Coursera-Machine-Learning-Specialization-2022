@@ -234,6 +234,43 @@ The Specialization is divided into 3 courses:
   * __Transfer Learning__ is the process of using a model that has already been trained on a different dataset to train a model on a new dataset.
     * For example, we could use a model that has already been trained on the ImageNet dataset to train a model on the MNIST dataset.
   * To apply transfer learning we would take a trained model and replace the last layer with a new layer that is specific to thenew dataset.
+* Full cycle of machine learning project:
+  1. Define the problem.
+  2. Collect the data.
+  3. Prepare the data.
+  4. Choose a model.
+  5. Train the model.
+  6. Evaluate the model.
+  7. Analyze the results.
+  8. Deploy the model.
+  9. Monitor the model.
+* Machine Learning is affecting billions of people and it is important to make it fair and ethical by making them unbiased and transparent.
+  * Sometimes these models become viral due to their engagement and popularity, but they can also be harmful.
+* Some guidelines Andrew has:
+  1. Have a more diverse team and emphasise problems that might harm minority groups.
+  2. Audit systems against possible harm prior to deployment.
+  3. Develope a mitigation strategy.
+
+### <ul>Week 4: Decision tree model</ul>
+
+#### Decision Trees
+* __Decision trees__ are a type of supervised learning algorithm that can be used for both classification and regression.
+* Some decisions include:
+  1. How to choose what feature to split on at each node?
+    - We need to maximize purity.
+  2. When do you stop splitting?
+    - When the node is 100% pure, or when we reach the maximum depth of the tree.
+
+#### Decision Tree Learning
+* __Entropy__ is a measure of impurity.
+  * The entropy of a node is defined as $H(S) = -\sum_{i=1}^{n} p_i \log_2(p_i)$.
+  * The entropy of a node is 0 if the node is pure.
+  * The entropy of a node is 1 if the node is equally likely to be any of the classes.
+* Process:
+  1. Calculate information gain for each feature.
+  2. Split on the feature with the highest information gain and create left and right branches.
+  3. Repeat until a stopping condition is met.
+  - We can do this with a recursive algorithm.
 
 __In progress...__
 
