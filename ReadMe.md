@@ -214,6 +214,10 @@ The Specialization is divided into 3 courses:
     * The test set is used to evaluate the model.
     * The cross-validation set is used to choose the model.
 
+#### Bias and Variance
+* High bias means the model is underfitting, which means the model is too simple.
+* High variance means the model is overfitting, which means the model is too complex.
+
 __In progress...__
 
 
