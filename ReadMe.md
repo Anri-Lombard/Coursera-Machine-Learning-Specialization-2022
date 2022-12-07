@@ -1,7 +1,7 @@
 # Machine Learning Specialization 2022
 
 ## Disclaimer
-These are my notes on the course, meaning these are my interpretations of the course material and lectures, - which might be suboptimal in certain cases. Any mistakes in either the notes or the solutions are mine and not the course creators. Feel free to use these notes and solutions to bolster your understanding, but __do not use them to surpass the course prematurely, nor to get yourself out of a jam.__ _This will not help you and leave you with a failed understanding of the material._
+These are my notes on the course, meaning these are my interpretations of the course material and lectures - which might be suboptimal in certain cases. Any mistakes in either the notes are mine and not the course creators. Feel free to use these notes to bolster your understanding. In addition to the notes I'll add the uncompleted notes, since it is against the honor code to add solutions, to complete at your leasure, __but do not rely on solutions provided online, as completing the assignments is the best way to learn__.
 
 ## Advice
 I highly recommend using [OpenAI's ChatGPT](https://chat.openai.com/chat) to ask questions and get answers while doing this course, or any coding in general. It is amazing at helping out.
@@ -247,7 +247,7 @@ The Specialization is divided into 3 courses:
 * Machine Learning is affecting billions of people and it is important to make it fair and ethical by making them unbiased and transparent.
   * Sometimes these models become viral due to their engagement and popularity, but they can also be harmful.
 * Some guidelines Andrew has:
-  1. Have a more diverse team and emphasise problems that might harm minority groups.
+  1. Have a more diverse team and emphasize problems that might harm minority groups.
   2. Audit systems against possible harm prior to deployment.
   3. Develope a mitigation strategy.
 
@@ -271,6 +271,43 @@ The Specialization is divided into 3 courses:
   2. Split on the feature with the highest information gain and create left and right branches.
   3. Repeat until a stopping condition is met.
   - We can do this with a recursive algorithm.
+* We can use one hot encoding on categorical variables to choose features. __One hot encoding__ is the process of representing categorical variables as binary vectors.
+  * For example, if we have a categorical variable with 3 possible values, we could represent it as a vector of length 3, where the first element is 1 if the value is the first value, the second element is 1 if the value is the second value, and the third element is 1 if the value is the third value.
+* To split continuous variables we could use information gain to choose the best split point.
+
+#### Tree Ensembles
+* __Tree ensembles__ are many decision trees combined together to make a more powerful model.
+* __Sampling with replacement__ is the process of randomly sampling from a dataset with replacement, which means that the same example can be sampled multiple times.
+* A popular ensembling algorithm is __random forests__, which is a tree ensemble algorithm that uses decision trees as the base learner.
+  * Random forests are a type of bagging algorithm.
+  * __Bagging__ is the process of training many models on different subsets of the data and then combining the results.
+  * Random means that we randomly sample the features at each split.
+* __XGBoost__ is a tree ensemble algorithm that uses decision trees as the base learner.
+  * XGBoost stands for __extreme gradient boosting__.
+  * __Boosting__ is the process of training many models sequentially, where each model tries to correct the mistakes of the previous model.
+* Using tree ensembles rather than neural networks has some advantages and disadvantages:
+  * Advantages:
+    - They are easier to interpret.
+    - They are faster to train.
+    - They are less prone to overfitting.
+  * Disadvantages:
+    - They are less flexible.
+    - They are less likely to perform well on complex tasks.
+    - They are less likely to perform well on large datasets.
+
+<hr />
+
+## Part 3: Unsupervised Learning, Recommenders, Reinforcement Learning
+### <ul>Week 1: Welcome!</ul>
+#### Clustering
+* __Clustering__ is the process of grouping data points into clusters.
+* The __K-means algorithm__ is an algorithm that can be used to cluster data.
+  * The algorithm works by:
+    1. Randomly initialize K cluster centroids.
+    2. Assign each data point to the closest cluster centroid.
+    3. Update the cluster centroids to be the mean of the data points in the cluster.
+    4. Repeat steps 2 and 3 until the cluster centroids no longer change.
+  * The optimization objective for k-means is to minimize the sum of the squared distances between each data point and its cluster centroid.
 
 __In progress...__
 
