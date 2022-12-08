@@ -309,6 +309,31 @@ The Specialization is divided into 3 courses:
     4. Repeat steps 2 and 3 until the cluster centroids no longer change.
   * The optimization objective for k-means is to minimize the sum of the squared distances between each data point and its cluster centroid.
 
+#### Anomoly Detection
+* __Anomaly detection__ is the process of identifying data points that are different from the rest of the data.
+* A __Gausian distribution__ is a distribution that is shaped like a bell curve.
+  * The mean of the distribution is the center of the bell curve.
+  * The variance of the distribution is the width of the bell curve.
+  * Also known as the "Normal distribution".
+  * The distribution is defined as $p(x) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}$.
+    * To estimate the mean and the variance we use the maximum likelihood estimate.
+      * mu is estimatied by $\mu = \frac{1}{m}\sum_{i=1}^{m}x^{(i)}$.
+      * variance is estimated by $\sigma^2 = \frac{1}{m}\sum_{i=1}^{m}(x^{(i)}-\mu)^2$.
+  * If distributions are not gaussian you can log transform the data to make it more gaussian.
+
+### <ul>Week 2: Recommender Systems</ul>
+#### Collaborative Filtering
+* __Collaborative filtering__ is a type of recommender system that makes predictions based on the past behavior of similar users.
+  * The formula for the cost function used in collaborative filtering is $J(x^{(1)},...,x^{(n_m)},\theta^{(1)},...,\theta^{(n_u)}) = \frac{1}{2}\sum_{(i,j):r(i,j)=1}((\theta^{(j)})^Tx^{(i)}-y^{(i,j)})^2 + \frac{\lambda}{2}\sum_{j=1}^{n_u}\sum_{k=1}^{n}(\theta_k^{(j)})^2 + \frac{\lambda}{2}\sum_{i=1}^{n_m}\sum_{k=1}^{n}(x_k^{(i)})^2$.
+* The limitations of collaborative filtering are:
+  * It is difficult to recommend new items.
+  * It is difficult to recommend items to new users.
+  * It is difficult to explain why a particular recommendation was made.
+
+#### Content-based Filtering
+* __Content-based filtering__ is a type of recommender system that makes predictions based on the similarity between the past behavior of the user and a particular item.
+
+
 __In progress...__
 
 
