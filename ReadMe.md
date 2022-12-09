@@ -226,14 +226,14 @@ The Specialization is divided into 3 courses:
   3. Evaluate the model.
   4. Analyze the results.
   5. Iterate.
-* Error analysis is the process of looking at the misclassifications and trying to understand why the model is making those mistakes. By categorizing misclassifications, we can try to understand what the model is doing wrong and try to fix it, and look at where to focus our efforts.
-* Adding more data is tempting, but it is not always the best solution. A better approach might be to evaluate which _type_ of data is necessary, and then try to get more of that type of data. This could boost performance more than just adding more data.
+* Error analysis is the process of looking at the misclassifications and trying to understand why the model is making those mistakes. By categorizing misclassifications, we can try to understand what the model is doing wrong and try to fix it and look at where to focus our efforts.
+* Adding more data is tempting, but it is not always the best solution. A better approach might be to evaluate which _type_ of data is necessary and then try to get more of that type of data. This could boost performance more than just adding more data.
   * One way to add more data would be to augment the data we already have. __Data augmentation__ is the process of creating new data from the data we already have.
     * For example, if we have a dataset of images of cats, we could rotate the images, flip them, and change the brightness of the images to create new images.
 * It might be better to take a data-centric approach to machine learning, compared to a conventional model-centric approach.
   * __Transfer Learning__ is the process of using a model that has already been trained on a different dataset to train a model on a new dataset.
     * For example, we could use a model that has already been trained on the ImageNet dataset to train a model on the MNIST dataset.
-  * To apply transfer learning we would take a trained model and replace the last layer with a new layer that is specific to thenew dataset.
+  * To apply transfer learning we would take a trained model and replace the last layer with a new layer that is specific to the new dataset.
 * Full cycle of machine learning project:
   1. Define the problem.
   2. Collect the data.
@@ -332,7 +332,50 @@ The Specialization is divided into 3 courses:
 
 #### Content-based Filtering
 * __Content-based filtering__ is a type of recommender system that makes predictions based on the similarity between the past behavior of the user and a particular item.
+* There are 2 main steps in building a model for content-based filtering, namely retrieving and ranking.
+  * __Retrieving__ is the process of finding items that are similar to the item that the user is interested in.
+  * __Ranking__ is the process of ranking the retrieved items based on how similar they are to the item that the user is interested in.
+* It is important to be ethical when building recommender systems, such as prioritizing value added to users rather than exploitation for profit.
+  * This is particularly visible in the advertising industry, where it is difficult to distinguish between ads that are relevant to the user and ads that are simply trying to exploit the user.
+  * One way to increase the likelihood of being ethical is to be transparent to users about how the system works.
 
+#### Principal Component Analysis
+* __Principal component analysis__ is a dimensionality reduction algorithm that can be used to reduce the dimensionality of a dataset.
+  * The algorithm works by:
+    1. Normalize the data.
+    2. Compute the covariance matrix of the data.
+    3. Compute the eigenvectors and eigenvalues of the covariance matrix.
+    4. Sort the eigenvectors by decreasing eigenvalues and choose the k eigenvectors with the largest eigenvalues to form a matrix U of size n x k.
+    5. Use this matrix to transform the data into the k-dimensional space.
+
+### <ul>Week 3: Reinforcement Learning</ul>
+#### Reinforcement Learning Introduction
+* __Reinforcement learning__ is a type of machine learning algorithm where the goal is to learn how to maximize some reward.
+* It has been successfully used in:
+  * Robotics.
+  * Game playing.
+  * Finance.
+  * and many more areas.
+* __Policies__ in reinforcement learning are the rules that the agent follows to choose an action.
+* __Markov Decision Process__ is a model that can be used to represent a reinforcement learning problem.
+  * The model consists of:
+    * A set of states.
+    * A set of actions.
+    * A reward function.
+    * A transition model.
+  * The goal of reinforcement learning is to find a policy that maximizes the expected reward.
+
+#### State-action value function
+* __State-action value function__ is a function that maps from a state and an action to a real number.
+  * The value of a state-action pair is the expected reward that the agent will receive if it is in that state and takes that action.
+  * The value of a state is the maximum value of the state-action pairs for that state.
+  * Also known as the __Q-function__.
+* __The Bellman equation__ is an equation that can be used to compute the value of a state-action pair.
+  * The equation is $Q(s,a) = r(s,a) + \gamma\sum_{s'}P(s'|s,a)max_{a'}Q(s',a')$.
+    * r(s,a) is the reward for taking action a in state s.
+    * $\gamma$ is the discount factor.
+    * P(s'|s,a) is the probability of transitioning from state s to state s' when taking action a.
+    * max is the maximum operator.
 
 __In progress...__
 
