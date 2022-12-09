@@ -248,8 +248,8 @@ The Specialization is divided into 3 courses:
   * Sometimes these models become viral due to their engagement and popularity, but they can also be harmful.
 * Some guidelines Andrew has:
   1. Have a more diverse team and emphasize problems that might harm minority groups.
-  2. Audit systems against possible harm prior to deployment.
-  3. Develope a mitigation strategy.
+  2. Audit systems against possible harm before deployment.
+  3. Develop a mitigation strategy.
 
 ### <ul>Week 4: Decision tree model</ul>
 
@@ -377,8 +377,22 @@ The Specialization is divided into 3 courses:
     * P(s'|s,a) is the probability of transitioning from state s to state s' when taking action a.
     * max is the maximum operator.
 
-__In progress...__
+#### Continuous State Spaces
+* __Continuous state spaces__ are state spaces that are not discrete.
+* The algorithm for computing the value of a state-action pair in a continuous state space is:
+  1. Initialize Q arbitrarily.
+  2. For each episode:
+    1. Initialize s.
+    2. For each step of the episode:
+      1. Choose a from s using policy derived from Q (e.g. $\epsilon$-greedy).
+      2. Take action a, observe r, s'.
+      3. Q(s,a) = Q(s,a) + $\alpha$(r + $\gamma$max$_{a'}$Q(s',a') - Q(s,a)).
+      4. s = s'.
+* An __epsilon-greedy policy__ is a policy that chooses a random action with probability $\epsilon$ and chooses the action with the highest value with probability 1 - $\epsilon$.
 
 
 # References
 * [Machine Learning Specialization](https://www.coursera.org/specializations/machine-learning-introduction)
+
+
+__Notebooks in progress...__
