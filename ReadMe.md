@@ -1,7 +1,7 @@
 # Machine Learning Specialization 2022
 
 ## Disclaimer
-These are my notes on the course, meaning these are my interpretations of the course material and lectures - which might be suboptimal in certain cases. Any mistakes are mine and not the course creator's. Feel free to use these notes to bolster your understanding. In addition to the notes I'll add the uncompleted notes, since it is against the honor code to add solutions, to complete at your leasure, __but do not rely on solutions provided online, as completing the assignments is the best way to learn__.
+These are my notes on the course, meaning these are my interpretations of the course material and lectures - which might be suboptimal in certain cases. Any mistakes are mine and not the course creator's. Feel free to use these notes to bolster your understanding. In addition to the notes I'll add the uncompleted notes since it is against the honor code to add solutions, to complete at your leisure, __but do not rely on solutions provided online, as completing the assignments is the best way to learn__.
 
 ## Advice
 I highly recommend using [OpenAI's ChatGPT](https://chat.openai.com/chat) to ask questions and get answers while doing this course, or any coding in general. It is amazing at helping out.
@@ -10,7 +10,7 @@ I highly recommend using [OpenAI's ChatGPT](https://chat.openai.com/chat) to ask
 The Specialization is divided into 3 courses:
 * Part 1: Supervised Machine Learning: Regression and Classification
 * Part 2: Advanced Learning Algorithms
-* Part 3: Unsupervised Learning: Recommenders, Reinforcement Learning
+* Part 3: [Unsupervised Learning: Recommenders, Reinforcement Learning](./3.%20Unsupervised%20Learning%2C%20Recommenders%2C%20Reinforcement%20Learning/)
 
 # Notes
 ## Part 1: Supervised Machine Learning: Regression and Classification
@@ -20,7 +20,7 @@ The Specialization is divided into 3 courses:
 * There are many applications of machine learning in daily life, even without us noticing it.
   * Some include Web Search, programming Self-Driving Cars, Speech Recognition, Advertising, Healthcare, Agriculture, and much, much more.
   * Andrew described a few in his [TED talk](https://youtu.be/reUZRyXxUs4).
-* AGI (Artificial General Intelligence) is the intelligence of a machine that could equal or surpass human intelligence, but has been overhyped. It might take a long time, or a very long time, to achieve, but it seems the best way to get closer is through learning algorithms.
+* AGI (Artificial General Intelligence) is the intelligence of a machine that could equal or surpass human intelligence but has been overhyped. It might take a long time, or a very long time, to achieve, but it seems the best way to get closer is through learning algorithms.
 * There is a massive demand for machine learning engineers, and the demand is most likely going to increase, thus it is a great time to learn it.
 
 #### Supervised vs Unsupervised Learning
@@ -34,8 +34,8 @@ The Specialization is divided into 3 courses:
 * __Unsupervised Learning__ is when you have a dataset without the correct answers, and you want to learn a function that maps from the input to the output.
   * We ask the algorithm to determine the structure of the data, and it will try to find patterns.
   * Types of unsupervised learning:
-    * __Clustering__ is when you want to group similar data points together.
-      * As an example, you could use clustering to group together similar news articles.
+    * __Clustering__ is when you want to group similar data points.
+      * As an example, you could use clustering to group similar news articles.
     * __Dimensionality Reduction__ is when you want to reduce the number of features in your dataset.
       * As an example, you could use dimensionality reduction to reduce the number of pixels in an image.
     * __Anomaly Detection__ is when you want to find unusual data points.
@@ -297,7 +297,7 @@ The Specialization is divided into 3 courses:
 
 <hr />
 
-## Part 3: Unsupervised Learning, Recommenders, Reinforcement Learning
+## Part 3: [Unsupervised Learning, Recommenders, Reinforcement Learning](./3.%20Unsupervised%20Learning%2C%20Recommenders%2C%20Reinforcement%20Learning/)
 ### <ul>Week 1: Welcome!</ul>
 #### Clustering
 * __Clustering__ is the process of grouping data points into clusters.
