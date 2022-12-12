@@ -11,12 +11,12 @@ I highly recommend using [OpenAI's ChatGPT](https://chat.openai.com/chat) to ask
 
 ## Specialization Outline
 The Specialization is divided into 3 courses:
-* Part 1: Supervised Machine Learning: Regression and Classification
+* Part 1: [Supervised Machine Learning: Regression and Classification](1.%20Supervised%20Machine%20Learning/)
 * Part 2: [Advanced Learning Algorithms](2.%20Advanced%20Learning%20Algorithms/)
 * Part 3: [Unsupervised Learning: Recommenders, Reinforcement Learning](./3.%20Unsupervised%20Learning%2C%20Recommenders%2C%20Reinforcement%20Learning/)
 
 # Notes
-## Part 1: Supervised Machine Learning: Regression and Classification
+## Part 1: [Supervised Machine Learning: Regression and Classification](1.%20Supervised%20Machine%20Learning/)
 ### <u>Week 1: Introduction to Machine Learning</u>
 #### Overview
 * __Machine Learning__ is "the science of getting computers to act without being explicitly programmed" (Arthur Samuel 1959) and is a subfield of _Artificial Intelligence_.
