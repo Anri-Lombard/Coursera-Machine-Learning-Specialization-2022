@@ -1,7 +1,7 @@
 # Machine Learning Specialization 2022
 
 ## Disclaimer
-These are my notes on the course, meaning these are my interpretations of the course material and lectures - which might be suboptimal in certain cases. Any mistakes are mine and not the course creator's. Feel free to use these notes to bolster your understanding. In addition to the notes I'll add the uncompleted notes since it is against the honor code to add solutions, to complete at your leisure, __but do not rely on solutions provided online, as completing the assignments is the best way to learn__.
+These are my notes on the course, meaning these are my interpretations of the course material and lectures - which might be suboptimal in certain cases. Any mistakes are mine and not the course creator's. Feel free to use these notes to bolster your understanding. In addition to the notes I'll add the uncompleted notebooks since it is against the honor code to add solutions, to complete at your leisure, __but do not rely on solutions provided online, as completing the assignments is the best way to learn__.
 
 ## Advice
 I highly recommend using [OpenAI's ChatGPT](https://chat.openai.com/chat) to ask questions and get answers while doing this course, or any coding in general. It is amazing at helping out.
