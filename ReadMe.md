@@ -396,6 +396,3 @@ The Specialization is divided into 3 courses:
 
 # References
 * [Machine Learning Specialization](https://www.coursera.org/specializations/machine-learning-introduction)
-
-
-__Notebooks in progress...__
