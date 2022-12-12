@@ -9,7 +9,7 @@ I highly recommend using [OpenAI's ChatGPT](https://chat.openai.com/chat) to ask
 ## Specialization Outline
 The Specialization is divided into 3 courses:
 * Part 1: Supervised Machine Learning: Regression and Classification
-* Part 2: Advanced Learning Algorithms
+* Part 2: [Advanced Learning Algorithms](2.%20Advanced%20Learning%20Algorithms/)
 * Part 3: [Unsupervised Learning: Recommenders, Reinforcement Learning](./3.%20Unsupervised%20Learning%2C%20Recommenders%2C%20Reinforcement%20Learning/)
 
 # Notes
@@ -128,7 +128,7 @@ The Specialization is divided into 3 courses:
 
 <hr />
 
-## Part 2: Advanced Learning Algorithms
+## Part 2: [Advanced Learning Algorithms](2.%20Advanced%20Learning%20Algorithms/)
 ### <ul>Week 1: Neural Networks</ul>
 #### Neural Network Intuition
 * __Neural Networks__ are a type of machine learning algorithm that is inspired by the human brain.
